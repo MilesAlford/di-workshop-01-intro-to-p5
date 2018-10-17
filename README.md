@@ -206,7 +206,7 @@ function draw() {
 ```
 
 **What does draw do?**
-
+The draw function takes the information from the fill and ellipse variables. These variables produce a result of a 30x30 circles to be created in accordance with the position of the mouse. The circles are filled with the colour declared in the fill variable.
 Now look at:
 
 ```js
@@ -214,12 +214,12 @@ fill(255, 0, 0)
 ```
 
 **What do these numbers do? What happens when you change them?**
-
+These numbers are rgb colour variables and inform the program to produce a particular colours based on the set parameters.
 **What does fill mean? What happens if you change it to stroke?**
-
-**What happens if you remove (or comment out) this line? What about if you
-include both fill and stroke on seperate lines?**
-
+The fill variable infroms the program to fill the ellipses with the rgb colour 255, 0, 0. If changed to a 
+storke variable then only the outline of function will change colour
+**What happens if you remove (or comment out) this line? What about if you include both fill and stroke on seperate lines?**
+If you include both fill and stroke variables then it allows the user to change the colour of both the outline and fill of the shape.
 Now look at this line:
 
 ```js
@@ -227,16 +227,17 @@ ellipse(mouseX, mouseY, 30, 30)
 ```
 
 **What does `ellipse` do?**
-
+It makes the draw function produce a circle.
 **What happens if you change the numbers?**
-
+The size of the ellipses produce changes in accordance with the size of the numbers
 **What do `mouseX` and `mouseY` mean?**
-
+These are declared variables that track the position of the mouse along x and y axis. 
 **What happens if you change the order of the items between the `(` `)`?**
 
 ---
 
 **What happens if you add `background(0)` after `draw() {`? Why?**
+The program no longer fills the background of the canvas, meaning that the canvas can no longer be seen.
 
 Replace the ellipse with a triangle. Use https://p5js.org/reference/ (the 2D
 primitives section) to help.
@@ -262,17 +263,18 @@ if (mouseIsPressed) {
 ```
 
 **What does `mouseIsPressed` mean?**
-
+The mouseIsPressed variable creates the instruction for the program to fill the ellipse with rgb(255, 0, 0) when the mouse is pressed. An if/else statement is used, meaning that when the mouse isn't pressed, the ellipse is filled with
+rgb(0, 255, 0).
 **What happens if you change `mouseIsPressed` to `keyIsPressed`?** You’ll need
 to click on the sketch so it registers keyboard events – use the ctrl key if you
 have issues with the keyboard.
-
+The mouseIsPressed doesn't contain any information of the function, so nothing changes.
 **What does if / else do?**
-
+An if/else statement is used to determine whether an action should be taken, based on whether or not of the statement is true. The else part of the if/else statement creates an exception to the if statement, allowing for new actions to commence if the original statement is false.
 **What happens if you remove the { } or ( )? Why?**
-
+The parentheses contain the expressions which are to be executed if they are removed then the expressions cannont be executed so only a blank page is shown.
 **What happens if you change 255 to mouseX ? Why?**
-
+the 255 variable controls the width of the shape, it changed to mouseX then the width of the shape will be controlled by the mouses position on the X axis
 **Remove the outline of the circle. Use Google and the P5.js reference to help
 you.**
 
