@@ -144,8 +144,7 @@ Only positive numbers
 **What happens if you add/remove a number?**
 The parameters width and height are required when declaring the createCanvas variable. If one of those parameters are to be removed, a default canvas is created 100px by 100px - but doesn't allow colour.
 
-**Can you guess what the `function setup() {` part does? What happens if you
-change the name of setup?**
+**Can you guess what the `function setup() {` part does? What happens if you change the name of setup?**
 The setup function is predefined in the P5 library and allows the browser to execute the functions stored within that library.
 
 L ook at this line:
@@ -274,7 +273,7 @@ An if/else statement is used to determine whether an action should be taken, bas
 **What happens if you remove the { } or ( )? Why?**
 The parentheses contain the expressions which are to be executed if they are removed then the expressions cannont be executed so only a blank page is shown.
 **What happens if you change 255 to mouseX ? Why?**
-the 255 variable controls the width of the shape, it changed to mouseX then the width of the shape will be controlled by the mouses position on the X axis
+the 255 variable controls the width of the shape, if changed to mouseX then the width of the shape will be controlled by the mouses position on the X axis
 **Remove the outline of the circle. Use Google and the P5.js reference to help
 you.**
 
